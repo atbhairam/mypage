@@ -2,43 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Encouragement</title>
+  <title>For Kritika 💖</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      background: linear-gradient(to right, #ffe5ec, #ffc8dd);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
     }
 
-    .message {
+    .card {
       background: white;
-      padding: 30px 40px;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      padding: 40px 50px;
+      border-radius: 20px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
       text-align: center;
+      max-width: 600px;
+      position: relative;
     }
 
-    .message h1 {
-      font-size: 2em;
-      color: #333;
-      margin: 0;
+    .card h1 {
+      font-size: 1.8em;
+      color: #c9184a;
+      margin-bottom: 20px;
     }
 
-    .highlight {
-      color: #e6739f;
-      font-weight: bold;
+    .card p {
+      font-size: 1.1em;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .emoji {
+      font-size: 1.5em;
+    }
+
+    .flowers {
+      position: absolute;
+      top: -25px;
+      right: -25px;
+      font-size: 2.5em;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -25px;
+      left: -25px;
+      font-size: 2.5em;
+    }
+
+    .audio-control {
+      margin-top: 25px;
+    }
+
+    .audio-control button {
+      background-color: #c9184a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .audio-control button:hover {
+      background-color: #a8123a;
     }
   </style>
 </head>
 <body>
-  <div class="message">
-    <h1>Hey <span class="highlight">beautiful</span>, you're doing great.<br>
-    Proud of you Kritika </h1>
+  <div class="card">
+    <div class="flowers">🌸🌼🌷</div>
+    <div class="heart">❤️</div>
+    <h1>Hey Kritika —</h1>
+    <p>
+      Just wanted to remind you how <strong>incredible</strong> you are.<br><br>
+      I’m proud of you for everything — even the things you think no one notices.<br><br>
+      You’re doing better than you think.<br><br>
+      Keep going. The world is better with you in it.<br><br>
+      You deserve every happiness 💫
+    </p>
+
+    <div class="audio-control">
+      <audio id="bgMusic" src="YOUR_MUSIC_URL_HERE.mp3"></audio>
+      <button onclick="document.getElementById('bgMusic').play()">🎵 Play Pretty Little Baby</button>
+    </div>
   </div>
 </body>
 </html>
